@@ -1,4 +1,7 @@
+const todoModel = require("../models/todo")
+
 const TodoController = {
+
     getTodo: (request, response)=>{
         todoModel.find({} , (err, data)=>{
             if(err){
